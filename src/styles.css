@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("//fonts.googleapis.com/css?family=Poiret+One|Montserrat+Alternates|Josefin+Sans|Caveat|Courgette|Pacifico|Righteous|Shadows+Into+Light&display=swap");
+html, body {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 100%;
+}
+
+p {
+    font-size: 1.25rem;
+    letter-spacing: .02rem;
+    margin-bottom: 1.3rem;
+}
+
+@media only screen and (max-width:768px) {
+    #overlay { height:auto; }
+}
+
+
+/* Visibility Helpers */
+
+@media only screen and (min-width:769px) {
+    .visible-mobile,.visible-tablet,.hidden-desktop { display:none !important; }
+}
+
+@media only screen and (min-width:480px) and (max-width:768px) {
+    .visible-mobile,.hidden-tablet,.visible-desktop { display:none !important; }
+}
+
+@media only screen and (max-width:479px) {
+    .hidden-mobile,.visible-tablet,.visible-desktop { display:none !important; }
+}

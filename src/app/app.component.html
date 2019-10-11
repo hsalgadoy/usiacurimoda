@@ -1,9 +1,8 @@
 <div class="hero-wrapper">
     <div class="hero">
-      <figure>
-        <video [attr.src]="URLPublica" loop="loop" muted="muted" autoplay="autoplay">
-          
-        </video>
+      <figure *ngIf="URLPublica" >
+        <video [attr.src]="URLPublica" loop muted autoplay oncanplay="this.play()"
+        onloadedmetadata="this.muted=true"></video>
         <figcaption>
           <h1>Usiacuri </h1>
         </figcaption>
@@ -11,5 +10,6 @@
     </div>
   </div>
   <div class="stretch">
-    <h1>El texto y demas componentes ban mas abajo</h1>
+    <h1 id="main-title">Usiacuri</h1>
+    <app-mapa></app-mapa>
   </div>

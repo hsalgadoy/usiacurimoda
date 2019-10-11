@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FirebaseStorageService } from './firebase-storage.service';
+import { AngularFireStorageReference } from '@angular/fire/storage';
 
 @Component({
   selector: 'app-root',
@@ -21,10 +22,12 @@ export class AppComponent implements OnInit {
   public URLPublica: any;
   public porcentaje = 0;
   public finalizado = false;
+  public referencia: AngularFireStorageReference;
 
   ngOnInit(){
-    let referencia = this.firebaseStorage.referenciaCloudStorage('header.mp4');
-    referencia.getDownloadURL().subscribe((URL) => {
+    console.log('ngOnit');
+    this.referencia = this.firebaseStorage.referenciaCloudStorage('header.mp4');
+    this.referencia.getDownloadURL().subscribe((URL) => {
       this.URLPublica = URL;
     });
   }

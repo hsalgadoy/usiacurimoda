@@ -5,9 +5,11 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
+import { MapaComponent } from './mapa/mapa.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MapaComponent
   ],
   imports: [
     BrowserModule,
