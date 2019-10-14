@@ -28,16 +28,18 @@ figure h1 {
 
 video {
   width: 100%;
+  height: 45% !important;
   max-width: 100%;
 }
 
 .stretch {
+  background: rgba(1, 15, 143, 0.137);
   height: auto;
   min-height: 100%;
   min-width: 100%;
   background-size: cover;
-  padding-bottom: 20px;
-  margin-top: 30em;
+  padding-bottom: 245px;
+  padding-top: 55%;
 }
 
 .stretch h1 {
