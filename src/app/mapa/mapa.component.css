@@ -8,6 +8,14 @@
     padding: 20px 10px 15px 10px;
 }
 
+#mapimage{
+  position: ;
+  height: 590px;
+  width: 415px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @import url("//fonts.googleapis.com/css?family=Poiret+One|Josefin+Sans");
 h1 {
     background-color: rgb(255, 191, 112);
