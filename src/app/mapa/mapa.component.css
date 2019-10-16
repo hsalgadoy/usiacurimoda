@@ -9,11 +9,18 @@
 }
 
 #mapimage{
-  position: ;
+  position: relative ;
   height: 590px;
   width: 415px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#checkUsi{
+  position: absolute;
+  top: 250px;
+  left: 210px;
+  visibility: hidden;
 }
 
 @import url("//fonts.googleapis.com/css?family=Poiret+One|Josefin+Sans");

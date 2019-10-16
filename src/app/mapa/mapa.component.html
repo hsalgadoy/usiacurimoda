@@ -1,12 +1,16 @@
 <div class="component1" id="topic1">
   <h1>Primer titulo Usiacuri</h1>
   <div id="mapimage" >
-    <img id="mapa" *ngIf="!changeImage" [attr.src]="URLMainMapHover" usemap="#image-map">
-    <img id="mapa" *ngIf="changeImage" [attr.src]="URLMainMap" usemap="#image-map">
-    <map name="image-map">
-      <area (mouseover)="changeImage=false" (mouseout)="changeImage=true"
-      coords="206,255,48" shape="circle">
-    </map>
+      <input type="checkbox" id="checkUsi">
+    <label for="checkUsi" style="position: relative;">
+        
+      <img id="mapa" *ngIf="!changeImage" [attr.src]="URLMainMapHover" usemap="#image-map">
+      <img id="mapa" *ngIf="changeImage" [attr.src]="URLMainMap" usemap="#image-map">
+      <map name="image-map">
+        <area (mouseover)="changeImage=false" (mouseout)="changeImage=true" coords="206,255,48" shape="circle">
+      </map>
+    </label>
+   
   </div>
 
 
