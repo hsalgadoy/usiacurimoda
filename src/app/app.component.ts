@@ -25,6 +25,7 @@ export class AppComponent implements OnInit {
   public referencia: AngularFireStorageReference;
 
   ngOnInit(){
+  
     console.log('ngOnit');
     this.referencia = this.firebaseStorage.referenciaCloudStorage('header.mp4');
     this.referencia.getDownloadURL().subscribe((URL) => {

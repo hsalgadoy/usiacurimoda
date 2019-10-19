@@ -1,13 +1,52 @@
-<div class="hero-wrapper">
-    <div class="hero">
-      <figure *ngIf="URLPublica" >
+<header>
+  <div class="video-wrapper">
+    <div class="video">
+      <figure *ngIf="URLPublica">
         <video [attr.src]="URLPublica" loop muted autoplay oncanplay="this.play()"
-        onloadedmetadata="this.muted=true"></video>
-        
+          onloadedmetadata="this.muted=true"></video>
       </figure>
     </div>
   </div>
-  <div class="stretch">
-    <h1 id="main-title">Usiacuri</h1>
-    <app-mapa></app-mapa>
+  <nav>
+    <a href="#contexto">Contexto</a>
+    <a href="#introduccion">Introducción</a>
+    <a href="#1" class="current">Galeria</a>
+    <a href="#2">Videos</a>
+    <a href="#3">Podcast</a>
+    <div class="nav-underline"></div>
+    <div class="nav-underline2"></div>
+  </nav>
+
+</header>
+
+
+
+
+
+<div class="stretch">
+  <div class="component" id="type0">
+    <div class="title-content">
+      <h1 id="main-title">Tejiendo Moda</h1>
+      <p class="title-text"> </p>
+    </div>
   </div>
+  <div id="compoment-general">
+    <div class="component" id="type1">
+      <app-mapa></app-mapa>
+    </div>
+    <div class="component" id="type2">
+      <app-introduccion></app-introduccion>
+    </div>
+    <div class="component" id="type1">
+      <div id="1">galeria</div>
+    </div>
+    <div class="component" id="type2">
+      <div id="2"> videos
+      </div>
+      <div class="component" id="type1">
+        <div id="3"> podcast
+        </div>
+
+
+      </div>
+    </div>

@@ -1,22 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 //Agrega estos módulos
-import { AngularFireModule } from '@angular/fire';
+
 import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireModule} from 'angularfire2';
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { MapaComponent } from './mapa/mapa.component';
+import { AngularFirestore } from 'angularfire2/firestore';
+import { IntroduccionComponent } from './introduccion/introduccion.component';
 @NgModule({
   declarations: [
     AppComponent,
-    MapaComponent
+    MapaComponent,
+    IntroduccionComponent
   ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireStorageModule,
+
   ],
-  providers: [],
+  providers: [AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

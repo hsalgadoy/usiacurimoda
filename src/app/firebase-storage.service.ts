@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { AngularFirestore, AngularFirestoreDocument } from 'angularfire2/firestore';
 import { AngularFireStorage } from '@angular/fire/storage';
 
 @Injectable({
@@ -7,7 +8,8 @@ import { AngularFireStorage } from '@angular/fire/storage';
 export class FirebaseStorageService {
 
   constructor(
-    private storage: AngularFireStorage
+    private storage: AngularFireStorage,
+    private storagedb: AngularFirestore 
   ) { }
 
   //Tarea para subir archivo
@@ -19,4 +21,9 @@ export class FirebaseStorageService {
   public referenciaCloudStorage(nombreArchivo: string) {
     return this.storage.ref(nombreArchivo);
   }
+
+  public getText(){
+    return this.storagedb.collection("usiacurideos").snapshotChanges();
+  }
+
 }

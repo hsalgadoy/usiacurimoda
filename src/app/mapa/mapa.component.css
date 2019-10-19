@@ -1,12 +1,21 @@
-#topic1 {
-    height: auto;
-    background-color: #EFDBC3;
-   /*11 background: rgba(60, 64, 97, 0.993);*/
-    min-height: 100%;
-    min-width: 100%;
-    background-size: cover;
-    padding: 20px 10px 15px 10px;
+/**
+
+
+
+#contexto{
+  left: 30px;
+  color: azure;
+  width: 520px;
+  padding-left: 35px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  float: left;
+  display: block;
 }
+
+#contexto h1{
+  float: left;
+}
+
 
 #mapimage{
   position: relative ;
@@ -14,6 +23,8 @@
   width: 415px;
   margin-left: auto;
   margin-right: auto;
+  right: 150px;
+  float: right;
 }
 
 #checkUsi{
@@ -23,11 +34,7 @@
   visibility: hidden;
 }
 
-@import url("//fonts.googleapis.com/css?family=Poiret+One|Josefin+Sans");
-h1 {
-    background-color: rgb(255, 191, 112);
-  /*  background-color: rgba(1, 21, 65, 0.089);*/
-    font-family: "Poiret One", sans-serif;
-    font-size: 2.5rem;
-    padding: 1rem 1.75rem;
-}
+
+
+
+**/
