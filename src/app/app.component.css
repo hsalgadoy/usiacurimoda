@@ -10,6 +10,24 @@
   z-index: -1;
 }
 
+.title-content{
+  width: 100%;
+  height: 100%;
+
+}
+
+#main-title {
+  font-size: 6.25rem;
+  letter-spacing: .60rem;
+  text-shadow: 1px 8px 1px rgba(188, 153, 93, 0.349);
+  letter-spacing: 1px;
+  padding-top: 15%;
+  justify-content: center;
+  text-align: center;
+  color: #BC995D;
+  font-family: 'Domine', sans-serif;
+}
+
 
 video {
   margin: 0;
