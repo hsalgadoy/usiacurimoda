@@ -14,21 +14,10 @@ export class MapaComponent implements OnInit {
   public referencia: AngularFireStorageReference;
   public URLMainMap: any;
   public URLMainMapHover: any;
-  public textos = [];
-  public texts = [];
+  
   public color = "red";
   ngOnInit() {
 
-    this.firebaseStorage.getText().subscribe((textSnapshot) => {
-      this.texts = [];
-      textSnapshot.forEach((textData: any) => {
-        this.texts.push({
-          id: textData.payload.doc.id,
-          data: textData.payload.doc.data()
-        });
-      })
-    });
-    console.log(this.texts);
     this.referencia = this.firebaseStorage.referenciaCloudStorage('Ubicación-Usiacurí_Atlántico.png');
     this.referencia.getDownloadURL().subscribe((URL1) => {
       this.URLMainMap = URL1;

@@ -22,8 +22,8 @@ export class FirebaseStorageService {
     return this.storage.ref(nombreArchivo);
   }
 
-  public getText(){
-    return this.storagedb.collection("usiacurideos").snapshotChanges();
+  public getText(coleccion: string){
+    return this.storagedb.collection(coleccion).snapshotChanges();
   }
 
 }
