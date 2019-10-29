@@ -1,30 +1,54 @@
 <div class="component2" id="contexto">
-  <div id="div-contexto" >
-      <link href='https://cdn.knightlab.com/libs/soundcite/latest/css/player.css' rel='stylesheet' type='text/css'><script type='text/javascript' src='https://cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
-      <h1>Contexto</h1>
-      <p id="contexto">Usiacurí es uno de los pueblos más antiguos de la costa Atlántica, cuya fundación se remonta al
-         año 1574, pero fue hasta 1856 que se declaró municipio. El territorio tiene una extensión rural 
-         de 102 km2 con un suelo quebrado de elevaciones que no exceden los 250 m.s.n.m. En principio, el 
-         municipio fue reconocido nacional e internacionalmente por sus aguas medicinales ya que cientos
-          de turistas visitaban el municipio con el fin de curar sus males. Más tarde la producción 
-          artesanal se constituyó como la principal actividad económica del territorio.</p>
-  </div>
-  <div id="mapimage" style="position: relative;">
-      <input type="checkbox" id="checkUsi">
-    <label for="checkUsi" style="position: relative;">
-        
-      <img id="mapa" *ngIf="!changeImage" [attr.src]="URLMainMapHover" usemap="#image-map">
-      <img id="mapa" *ngIf="changeImage" [attr.src]="URLMainMap" usemap="#image-map">
-      <map name="image-map">
-        <area (mouseover)="changeImage=false" (mouseout)="changeImage=true" coords="206,255,48" shape="circle">
-      </map>
-    </label>
-   
-  </div>
 
-  
+    <div class="content-map">
+        <div class="textocontenedor">
+            <h3>Contexto</h3>
+            <p>Desde su fundación, en 1574, Usiacurí, el pesebre del Atlántico, ha sido reconocido por ser un pueblo de tradición artesanal. Ubicado a 38 kilómetros de Barranquilla, cuenta con una extensión rural de 103 km² y una temperatura que varía entre
+                los 24º y 34º centígrados. Sobre suelos quebrados y un paisaje montañoso, habitan cerca de 9.600 usiacureños de los cuales, según cálculos de la alcaldía local, el 80% se dedican al oficio de la tejeduría en palma de iraca
+            </p>
+            <br>
+            <br>
+            <aside id="leermas" class="modal">
+                <div>
+                    Usiacurí, un lugar lleno de magia y paz, no es solo reconocido por el talento artesanal de sus habitantes, sino que, además, es un tesoro lleno de leyendas. En sus pozos artesanales se encontraba un poder escondido, aguas medicinales que tenían la facultad
+                    de curar graves enfermedades. En palabras de Eduardo Amaranto, líder de sostenibilidad turística del municipio, esto creó a comienzos del siglo XX una oleada de migración, debido a que cientos de turistas llegaban al lugar con el fin
+                    de curar sus males, tanto así que hasta el mismo poeta Julio Flórez, quien vivió gran parte de su vida en el municipio, pudo dar testimonio de la efectividad de sus aguas. [1]
+                    <a href="#close" title="Close">Close</a>
+                </div>
+            </aside>
+            <div class="botones">
+                <a href="#leermas" class="openModal">Leer Mas</a>
+            </div>
+        </div>
+        <div class="mapacontenedor">
+            <div id="mapimage">
+                <input type="checkbox" id="checkUsi" class="checkUsi" name="checkUsi">
+                <div class="modal__overlay">
+                    <label for="modal__state" class="modal__overlay-close"></label>
 
-
-
+                    <label class="button button--close modal__close" for="modal__state"><i class="fa fa-times"></i></label>
+                    <div class="modal1">
+                        <div class="page-container">
+                            <div class="video-container">
+                                <video autoplay muted loop width="100%" height="100%" volume="100" canplay="false" style="top: 0; width: 100%; height: 100%; z-index: -1;">
+                                  <source src="https://firebasestorage.googleapis.com/v0/b/firegallery-448d4.appspot.com/o/Video-mapa.mp4?alt=media&token=b561336d-0ba3-4a48-8b4f-1a2738a05b9d" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="z-index: 999; position: relative; top:290px; left: 80px;">
+                    <p class="scale-up-center">click</p>
+                </div>
+                <label for="checkUsi" style="position: relative;">
+              <img id="mapa" *ngIf="!changeImage" [attr.src]="URLMainMapHover" usemap="#image-map">
+              <img id="mapa" *ngIf="changeImage" [attr.src]="URLMainMap" usemap="#image-map">
+              <map name="image-map">
+                <area (mouseover)="changeImage=false" (mouseout)="changeImage=true" coords="206,255,48" shape="circle">
+              </map>
+            </label>
+            </div>
+        </div>
+    </div>
 
 </div>

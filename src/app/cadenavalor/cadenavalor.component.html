@@ -1,106 +1,76 @@
 <div id="cadenavalor">
-    <h1>Cadena de Valor <span> Artesanias</span></h1>
+
+    <h1 id="titlecadena">Cadena de Valor <span> Artesanias</span></h1>
 
     <div class="container">
 
-        <div *ngFor="let eslavon of eslavones" class="timeline-block {{eslavon.data.orientacion}}">
-            <div class="play-button"></div>
-            <div class="timeline-content">
-                <h3>{{eslavon.data.titulo}}</h3>
-                <p>{{eslavon.data.leyenda}}</p>
-            </div>
-        </div>
-        <a href="#" (click)="play()">Home</a>
-        <!--
 
-        <div *ngFor="let eslavon of eslavones" class="moon-right timeline-block {{eslavon.data.orientacion}}">
-            <div class="cadena-content">
-                <div class="circle">#</div>
-                <div class="text">
-                    <h3 id="title">{{eslavon.data.titulo}}</h3>
-                    <p id="leyenda">
-                        {{eslavon.data.leyenda}}
-                    </p>
+        <div class="chain">
+            <div class="circle-line lf">
+                <div class="circle-lf">
+                    <div class="play-button-lf"></div>
+                    <h1>1</h1>
+                    <div class="article-lf">
+                        <div>
+                            <h3>Titulo</h3>
+                            <!-- <img class="imgcont" src="" "></img> -->
+                            <img class="imgcont" src="../../assets/images/Diseño-atlantico-mapa-minimalista-general.gif">
+                        </div>
+                        <div class="leyeng-lf">
+                            <p> contenido de la cadena de toca tener una gran cantidad de ocntenido para ajustar bien valor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="circle-line rg ">
+                <div class="circle-rg ">
+                    <div class="play-button-rg"></div>
+                    <h1>2</h1>
+                    <div class="article-rg">
+                        <div>
+                            <h3>Titulo</h3>
+                            <!-- <img class="imgcont" src="" "></img> -->
+                            <img class="imgcont" src="../../assets/images/Diseño-atlantico-mapa-minimalista-general.gif">
+                        </div>
+                        <div class="leyeng-rg">
+                            <p> contenido de la cadena de toca tener una gran cantidad de ocntenido para ajustar bien valor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="circle-line lf ">
+                <div class="circle-lf ">
+                    <div class="play-button-lf "></div>
+                    <h1>3</h1>
+                </div>
+            </div>
+            <div class="circle-line rg ">
+                <div class="circle-rg ">
+                    <div class="play-button-rg "></div>
+                    <h1>4</h1>
+                </div>
+            </div>
+            <div class="circle-line lf ">
+                <div class="circle-lf ">
+                    <div class="play-button-lf "></div>
+                    <h1>5</h1>
+                </div>
+            </div>
+            <div class="circle-line rg ">
+                <div class="circle-rg ">
+                    <div class="play-button-rg "></div>
+                    <h1>6</h1>
+                </div>
+
+            </div>
+            <div class="circle-line lf ">
+                <div class="circle-lf ">
+                    <div class="play-button-lf "></div>
+                    <h1>7</h1>
                 </div>
             </div>
         </div>
 
-    -->
     </div>
+
 </div>
-
-
-
-
-
-<!--
-
-
- <div class="timeline-block timeline-block-right">
-            <div class="marker"></div>
-            <div class="timeline-content">
-                <h3>First Year</h3>
-                <span>Some work experience</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-            </div>
-        </div>
-        <div class="timeline-block timeline-block-left">
-            <div class="marker"></div>
-            <div class="timeline-content">
-                <h3>Seconed Year</h3>
-                <span>Some work experience</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-            </div>
-        </div>
-
-        <div class="timeline-block timeline-block-left">
-            <div class="marker"></div>
-            <div class="timeline-content">
-                <h3>Seconed Year</h3>
-                <span>Some work experience</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-            </div>
-        </div>
-
-        <div class="timeline-block timeline-block-right">
-            <div class="marker"></div>
-            <div class="timeline-content">
-                <h3>Third Year</h3>
-                <span>Some work experience</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-            </div>
-        </div>
-
-        <div class="timeline-block timeline-block-left">
-            <div class="marker"></div>
-            <div class="timeline-content">
-                <h3>Fourth Year</h3>
-                <span>Some work experience</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-            </div>
-        </div>
-
-        <div class="timeline-block timeline-block-right">
-            <div class="marker"></div>
-            <div class="timeline-content">
-                <h3>Fifth Year</h3>
-                <span>Some work experience</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-            </div>
-        </div>
-
-
-
--->

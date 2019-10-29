@@ -1,40 +1,461 @@
-/**
-
-
-
-#contexto{
-  left: 30px;
-  color: azure;
-  width: 520px;
-  padding-left: 35px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  float: left;
-  display: block;
+.content-map {
+    padding: 25px;
+    height: 650px;
+    width: 1281px;
 }
 
-#contexto h1{
-  float: left;
+.mapacontenedor {
+    position: relative;
+    left: 10%;
+    left: 670px;
+    height: 650px;
+    width: 550px;
+    top: -250px;
+}
+
+.mapimage {
+    top: 15%;
+    left: 45%;
+}
+
+p {
+    width: 570px;
+}
+
+.textocontenedor {
+    position: relative;
+    top: 100px;
+    left: 80px;
+    width: 600px;
+    font-family: 'Domine', sans-serif;
+    text-align: center;
+}
+
+.textocontenedor h3 {
+    padding: 5px;
+    margin: 3px;
+}
+
+img {
+    height: 80%;
+}
+
+img {
+    margin-left: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+
+#checkUsi {
+    position: absolute;
+    top: 103px;
+    left: 127px;
+    z-index: -1;
+}
+
+.checkUsi:checked+.modal__overlay {
+    opacity: 1;
+    animation: fade-in .4s;
+    display: block;
 }
 
 
-#mapimage{
-  position: relative ;
-  height: 590px;
-  width: 415px;
-  margin-left: auto;
-  margin-right: auto;
-  right: 150px;
-  float: right;
+/* modal1 */
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-#checkUsi{
-  position: absolute;
-  top: 250px;
-  left: 210px;
-  visibility: hidden;
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .4);
+    display: none;
+}
+
+.video-container {
+    border-radius: 100%;
+    width: 600px;
+    height: 400px;
+    object-fit: fill;
+}
+
+video {
+    position: center;
+    object-fit: fill;
+    border-radius: 30%;
+    width: 600px;
+    height: 400px;
 }
 
 
+/* display the modal overlay when the input[type=radio] is checked */
+
+.modal__state:checked+.modal__overlay {
+    opacity: 1;
+    animation: fade-in .4s;
+    display: block;
+}
+
+@keyframes scoot-up {
+    0% {
+        margin-top: 80px;
+    }
+    100% {
+        margin-top: 50px;
+    }
+}
+
+.modal1 {
+    position: relative;
+    top: 103px;
+    left: 127px;
+    margin: 0px;
+    margin-top: 0px;
+    padding: 0px 0px;
+    background: transparent;
+    text-align: left;
+    border-radius: 30%;
+    width: 500px;
+    height: 400px;
+}
+
+.modal__state:checked+.modal__overlay .modal {
+    margin-top: 50px;
+    animation: scoot-up .2s;
+    animation-timing-function: ease-out;
+    transform-origin: 50% 0px;
+}
+
+.modal__close {
+    position: center;
+    top: 5px;
+    right: 5px;
+}
+
+.modal__overlay-close {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 
 
-**/
+/* the input[type=radio] that's toggled when the label is clicked */
+
+.modal__state {
+    display: none;
+}
+
+
+/* button styles */
+
+.button {
+    display: inline-block;
+    padding: 1em;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0 4px 0 darken(#ACCFCC, 10%);
+    background: #ACCFCC;
+    color: #595241;
+}
+
+.button:hover,
+.button:focus {
+    cursor: pointer;
+    background-color: lighten(#ACCFCC, 10%);
+    box-shadow: 0 4px 0 #ACCFCC;
+}
+
+.button:active {
+    margin-top: 4px;
+    margin-bottom: -4px;
+    box-shadow: 0 0 0;
+}
+
+.scale-up-center {
+    -webkit-animation: scale-up-center 3s cubic-bezier(0.390, 0.575, 0.565, 1.500) infinite both;
+    animation: scale-up-center 3s cubic-bezier(0.390, 0.575, 0.565, 1.500) infinite both;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.modal {
+    /* Overlay page content */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #a36509;
+    z-index: 10000;
+    /* Transition opacity on open */
+    -webkit-transition: opacity 500ms ease-in;
+    -moz-transition: opacity 500ms ease-in;
+    transition: opacity 500ms ease-in;
+    /* Hide for now */
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/* Show modal */
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+    /* at time of writing (Feb 2012), pointer-events not supported by Opera or IE */
+}
+
+
+/* Content */
+
+.modal>div {
+    width: 560px;
+    background: rgba(250, 184, 41, 0.274);
+    position: relative;
+    margin: 10% auto;
+    /* Default minimise animation */
+    -webkit-animation: minimise 500ms linear;
+    -moz-animation: minimise 500ms linear;
+    animation: minimise 500ms linear;
+    /* Prettify */
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.9);
+    background: rgba(255, 255, 255, 0.178);
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.151), rgba(204, 204, 204, 0.158));
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.123), rgba(204, 204, 204, 0.144));
+    background: -o-linear-gradient(rgba(255, 255, 255, 0.123), rgba(204, 204, 204, 0.144));
+    background: linear-gradient(rgba(255, 255, 255, 0.13), rgba(204, 204, 204, 0.116));
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.11);
+}
+
+
+/* Override animation on modal open */
+
+.modal:target>div {
+    -webkit-animation-name: bounce;
+    -moz-animation-name: bounce;
+    animation-name: bounce;
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: scale3d(0.1, 0.1, 1);
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.9);
+    }
+    55% {
+        -webkit-transform: scale3d(1.08, 1.08, 1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+    }
+    75% {
+        -webkit-transform: scale3d(0.95, 0.95, 1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.9);
+    }
+}
+
+@-webkit-keyframes minimise {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(0.1, 0.1, 1);
+    }
+}
+
+@-moz-keyframes bounce {
+    0% {
+        -moz-transform: scale3d(0.1, 0.1, 1);
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.9);
+    }
+    55% {
+        -moz-transform: scale3d(1.08, 1.08, 1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+    }
+    75% {
+        -moz-transform: scale3d(0.95, 0.95, 1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    }
+    100% {
+        -moz-transform: scale3d(1, 1, 1);
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.9);
+    }
+}
+
+@-moz-keyframes minimise {
+    0% {
+        -moz-transform: scale3d(1, 1, 1);
+    }
+    100% {
+        -moz-transform: scale3d(0.1, 0.1, 1);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale3d(0.1, 0.1, 1);
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.9);
+    }
+    55% {
+        transform: scale3d(1.08, 1.08, 1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+    }
+    75% {
+        transform: scale3d(0.95, 0.95, 1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.9);
+    }
+}
+
+@keyframes minimise {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    100% {
+        transform: scale3d(0.1, 0.1, 1);
+    }
+}
+
+
+/* Modal close link */
+
+.modal a[href="#close"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: transparent;
+}
+
+
+/* Reset native styles */
+
+.modal a[href="#close"]:focus {
+    outline: none;
+}
+
+
+/* Create close button */
+
+.modal a[href="#close"]:after {
+    content: 'X';
+    display: block;
+    /* Position */
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 1.5em;
+    padding: 1px 1px 1px 2px;
+    /* Style */
+    text-decoration: none;
+    text-shadow: none;
+    text-align: center;
+    font-weight: bold;
+    background: rgb(248, 211, 132);
+    color: rgb(153, 99, 54);
+    border: 3px solid rgb(153, 99, 54);
+    border-radius: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.modal a[href="#close"]:focus:after,
+.modal a[href="#close"]:hover:after {
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+.modal a[href="#close"]:focus:after {
+    outline: 1px solid #000;
+}
+
+
+/* Open modal */
+
+a.openModal {
+    margin: 1em auto;
+    display: block;
+    width: 200px;
+    background: #ccc;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    background: rgb(255, 205, 96);
+    background: -moz-linear-gradient(rgb(255, 205, 96), rgb(255, 205, 96));
+    background: -webkit-linear-gradient(rgb(255, 205, 96), rgb(255, 205, 96));
+    background: -o-linear-gradient(rgb(255, 205, 96), rgb(255, 205, 96));
+    background: linear-gradient(rgb(255, 205, 96), rgb(255, 205, 96));
+    text-shadow: 0 1px 0 rgb(255, 205, 96);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    font-family: 'Domine', sans-serif, bold;
+    color: #835004;
+}
+
+.subtitle {
+    position: relative;
+    left: calc(50% - 330px);
+    font-family: 'Domine', sans-serif, bold;
+}
+
+#texto-main-title {
+    width: 70%;
+    position: relative;
+    left: 15%;
+}
+
+.title-text {
+    position: ababsolute;
+    left: 40%;
+    margin: 20px 20px 5px 20px;
+    font-family: 'Domine', sans-serif, bold;
+    color: rgb(224, 144, 6);
+    text-align: center;
+}
+
+a.openModal:hover,
+a.openModal:focus {
+    background: -moz-linear-gradient(rgba(255, 205, 96, 0.541), rgb(255, 205, 96));
+    background: -webkit-linear-gradient(rgb(255, 205, 96), rgb(255, 205, 96));
+    background: -o-linear-gradient(rgb(255, 205, 96), rgb(255, 205, 96));
+    background: linear-gradient(rgb(255, 205, 96), rgb(255, 205, 96));
+}

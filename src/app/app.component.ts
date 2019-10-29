@@ -27,10 +27,11 @@ export class AppComponent implements OnInit {
   ngOnInit(){
   
     console.log('ngOnit');
-    this.referencia = this.firebaseStorage.referenciaCloudStorage('header.mp4');
+    this.referencia = this.firebaseStorage.referenciaCloudStorage('foto-portada.JPG');
     this.referencia.getDownloadURL().subscribe((URL) => {
       this.URLPublica = URL;
     });
+    console.log(this.URLPublica);
   }
   
 /**

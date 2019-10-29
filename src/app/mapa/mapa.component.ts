@@ -14,6 +14,8 @@ export class MapaComponent implements OnInit {
   public referencia: AngularFireStorageReference;
   public URLMainMap: any;
   public URLMainMapHover: any;
+  marked = false;
+  theCheckbox = false;
   
   public color = "red";
   ngOnInit() {
@@ -30,5 +32,9 @@ export class MapaComponent implements OnInit {
 
   }
 
+  toggleVisibility(e){
+    this.marked= e.target.checked;
+    console.log(this.marked)
+  }
 
 }

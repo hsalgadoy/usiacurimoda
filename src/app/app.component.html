@@ -1,21 +1,24 @@
 <header>
-  <div class="video-wrapper">
-    <div class="video">
-      <figure *ngIf="URLPublica">
-        <video [attr.src]="URLPublica" loop muted autoplay oncanplay="this.play()"
-          onloadedmetadata="this.muted=true"></video>
-      </figure>
+    <div class="video-wrapper">
+        <div class="video">
+            <figure>
+                <!--  <video [attr.src]="URLPublica" loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted=true"></video>
+              -->
+                <img src="https://firebasestorage.googleapis.com/v0/b/usiacuri-moda-artesania.appspot.com/o/foto-portada%20.JPG?alt=media&token=f972e6fd-0628-4ea5-895a-df5ac7436617" style="width: 100%; height: 100%;">
+            </figure>
+        </div>
     </div>
-  </div>
-  <nav>
-    <a href="#type0">Inicio</a>
-    <a href="#contexto">Contexto</a>
-    <a href="#introduccion">Introducción</a>
-    <a href="#cadenavalor">Cadena de Valor</a>
-    <a href="#3">Podcast</a>
-    <div class="nav-underline"></div>
-    <div class="nav-underline2"></div>
-  </nav>
+    <nav>
+        <a href="#type0">Inicio</a>
+        <a href="#contexto">Introduccion</a>
+        <a href="#introduccion">Contexto</a>
+        <a href="#cadenavalor">Dia a dia</a>
+        <a href="#3">Hacia la moda</a>
+        <a href="#3">Llegada del color</a>
+        <a href="#3">El boom</a>
+        <div class="nav-underline"></div>
+        <div class="nav-underline2"></div>
+    </nav>
 
 </header>
 
@@ -24,32 +27,46 @@
 
 
 <div class="stretch">
-  <div class="component" id="type0">
-    <div class="title-content">
-      <h1 id="main-title">Tejiendo Moda</h1>
-      <p class="title-text"> </p>
-      <aside id="example" class="modal">
-        <div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/zXZfAgC44qo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <a href="#close" title="Close">Close</a>
+    <div class="component" id="type0">
+        <div class="title-content">
+            <h1 id="main-title">Tejiendo Moda</h1>
+            <h4 id="subtitle">El nuevo lujo artesanal</h4>
+            <div id="texto-main-title">
+                <p class="title-text"> De la palma de iraca nace el cogollo; del cogollo se desprende el hilo que, ensartado en una aguja y trenzado a un alambre, da vida a múltiples objetos artesanales. Los bolsos, aretes y anillos fabricados con esta particular fibra han
+                    convertido a Usiacurí, municipio del Atlántico, en líder artesanal del departamento. A comienzos de este siglo, los diseñadores colombianos vieron en este territorio de tejedores un talento y una capacidad productiva particular que,
+                    sumado a sus procesos de diseño, innovación y creatividad, sería capaz de llegar al mercado de la moda internacional.
+                </p>
+                <p class="title-text">
+                    Acompañános en este recorrido multimedial en el que damos cuenta de cómo la artesanía de Usiacurí se ha constituido en los últimos años como un referente de moda de nuestro país.
+                </p>
+            </div>
+            <div class="botones">
+                <a href="#example" class="openModal">Ver Video</a>
+                <a href="#introduccion" class="openModal">Leer reportaje</a>
+            </div>
         </div>
-    </aside>
-    <a href="#example" class="openModal">Ver Video</a>
+        <aside id="example" class="modal">
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zXZfAgC44qo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <a href="#close" title="Close">Close</a>
+            </div>
+        </aside>
     </div>
-  </div>
-  <div id="compoment-general">
-    <div class="component" id="type1">
-      <app-mapa></app-mapa>
+    <div id="compoment-general">
+        <div class="component" id="type2">
+            <app-introduccion></app-introduccion>
+        </div>
+        <div class="component" id="type1">
+            <app-mapa></app-mapa>
+        </div>
+        <div class="component" id="type2">
+            <app-introduccion></app-introduccion>
+        </div>
+        <div class="component" id="type1">
+            <app-cadenavalor></app-cadenavalor>
+        </div>
+        <div class="component" id="type2">
+            <div id="3"> podcast</div>
+        </div>
     </div>
-    <div class="component" id="type2">
-      <app-introduccion></app-introduccion>
-    </div>
-    <div class="component" id="type1">
-      <app-cadenavalor></app-cadenavalor>
-    </div>
-    <div class="component" id="type2">
-      <div id="3"> podcast</div>
-    </div>
-  </div>
-</div>  
-        
+</div>
