@@ -19,10 +19,19 @@
 
 #introduccion {
     height: 400px;
+    margin-bottom: -3px;
 }
 
 p strong {
     position: relative;
     top: 70px;
     left: 12%;
+    font-size: 1.5rem;
+    letter-spacing: .60rem;
+    text-shadow: 1px 8px 1px rgba(188, 153, 93, 0.349);
+    letter-spacing: 1px;
+    justify-content: center;
+    text-align: center;
+    color: rgb(129, 63, 12);
+    font-family: 'Domine', sans-serif;
 }

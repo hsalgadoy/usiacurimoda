@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FirebaseStorageService } from './firebase-storage.service';
 import { AngularFireStorageReference } from '@angular/fire/storage';
+declare var $: any;
 
 @Component({
   selector: 'app-root',

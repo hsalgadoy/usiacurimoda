@@ -203,8 +203,12 @@ nav a:nth-child(7):hover~.nav-underline2 {
 }
 
 .title-content {
-    width: 100%;
+    width: 66%;
+    position: relative;
+    margin-left: 30%;
     height: 100%;
+    align-items: center;
+    padding: 5PX 20PX 5PX 20PX;
 }
 
 #main-title {
@@ -212,11 +216,9 @@ nav a:nth-child(7):hover~.nav-underline2 {
     letter-spacing: .60rem;
     text-shadow: 1px 8px 1px rgba(188, 153, 93, 0.349);
     letter-spacing: 1px;
-    padding-top: 8%;
+    padding-top: 12%;
     justify-content: center;
-    /**text-align: center;*/
-    left: 45%;
-    margin-left: 26.5%;
+    text-align: center;
     color: rgb(129, 63, 12);
     font-family: 'Domine', sans-serif;
 }
@@ -235,18 +237,29 @@ nav a:nth-child(7):hover~.nav-underline2 {
 .title-text {
     width: 100%;
     align-content: center;
-    margin: 20px 20px 5px 20px;
+    align-items: center;
+    padding: 5px 15px 5px 15px;
+    margin: 5px -55px 5px -15px;
     font-family: 'Domine', sans-serif;
     color: rgb(255, 224, 193);
-    text-align: center;
-    text-anchor: 3px;
+    /**background-color: rgba(114, 83, 59, 0.712);**/
+    font-size: 19px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.title-text span {
+    padding: 0;
     background-color: rgba(114, 83, 59, 0.712);
-    size: 25px;
+}
+
+.botones {
+    position: relative;
+    margin-left: 23.5%;
 }
 
 .botones a {
-    position: relative;
-    left: 32%;
+    text-align: center;
     float: left;
     margin: 10px 5px 0 5px;
 }
