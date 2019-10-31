@@ -8,18 +8,23 @@
             </figure>
         </div>
     </div>
-    <nav>
-        <a href="#type0">Inicio</a>
-        <a href="#introduccion">Introduccion</a>
-        <a href="#contexto">Contexto</a>
-        <a href="#cadenavalor">Dia a dia</a>
-        <a href="#3">Hacia la moda</a>
-        <a href="#3">Llegada del color</a>
-        <a href="#3">El boom</a>
-        <div class="nav-underline"></div>
-        <div class="nav-underline2"></div>
-    </nav>
 
+    <div id="menuprincipal">
+        <input type="checkbox" id="toggle" checked="true" value="MENU" />
+        <label for="toggle" class="fa fa-bars">MENU</label>
+        <nav>
+            <menu>
+                <li><a href="#type0">INICIO</a></li>
+                <li><a href="#introduccion">INTRODUCCIÓN</a></li>
+                <li><a href="#contexto">CONTEXTO</a></li>
+                <li><a href="#cadenavalor">DÍA A DÍA</a></li>
+                <li><a href="#3">LLEGADA DEL COLOR</a></li>
+                <li><a href="#">HACIA LA MODA</a></li>
+                <li><a href="#">EL BOOM</a></li>
+            </menu>
+        </nav>
+
+    </div>
 </header>
 
 
@@ -63,11 +68,9 @@
             <app-mapa></app-mapa>
         </div>
         <div class="component" id="type2">
-        </div>
-        <div class="component" id="type1">
             <app-cadenavalor></app-cadenavalor>
         </div>
-        <div class="component" id="type2">
+        <div class="component" id="type1">
             <div id="3"> podcast</div>
         </div>
     </div>

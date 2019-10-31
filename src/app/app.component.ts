@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { FirebaseStorageService } from './firebase-storage.service';
 import { AngularFireStorageReference } from '@angular/fire/storage';
 declare var $: any;
@@ -14,9 +14,7 @@ export class AppComponent implements OnInit {
     private firebaseStorage: FirebaseStorageService
     
   ) {}
-
-
-
+  
   public mensajeArchivo = 'No hay un archivo seleccionado';
   public datosFormulario = new FormData();
   public nombreArchivo = '';

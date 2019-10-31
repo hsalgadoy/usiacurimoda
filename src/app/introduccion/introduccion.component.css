@@ -17,12 +17,16 @@
     align-content: center;
 }
 
+#demoparagraph p {
+    margin-top: 5px;
+}
+
 #introduccion {
     height: 400px;
     margin-bottom: -3px;
 }
 
-p strong {
+p strong.title {
     position: relative;
     top: 70px;
     left: 12%;

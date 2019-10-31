@@ -10,6 +10,7 @@ import { MapaComponent } from './mapa/mapa.component';
 import { AngularFirestore } from 'angularfire2/firestore';
 import { IntroduccionComponent } from './introduccion/introduccion.component';
 import { CadenavalorComponent } from './cadenavalor/cadenavalor.component';
+
 @NgModule({
   declarations: [
     AppComponent,
