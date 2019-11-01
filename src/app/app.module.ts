@@ -10,13 +10,15 @@ import { MapaComponent } from './mapa/mapa.component';
 import { AngularFirestore } from 'angularfire2/firestore';
 import { IntroduccionComponent } from './introduccion/introduccion.component';
 import { CadenavalorComponent } from './cadenavalor/cadenavalor.component';
+import { CaminomodaComponent } from './caminomoda/caminomoda.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MapaComponent,
     IntroduccionComponent,
-    CadenavalorComponent
+    CadenavalorComponent,
+    CaminomodaComponent
   ],
   imports: [
     BrowserModule,
