@@ -84,7 +84,7 @@ img {
 }
 
 .video-container {
-    border-radius: 100%;
+    border-radius: 10%;
     width: 600px;
     height: 400px;
     object-fit: fill;
@@ -93,7 +93,7 @@ img {
 video {
     position: center;
     object-fit: fill;
-    border-radius: 30%;
+    border-radius: 10%;
     width: 600px;
     height: 400px;
 }
@@ -125,7 +125,7 @@ video {
     padding: 0px 0px;
     background: transparent;
     text-align: left;
-    border-radius: 30%;
+    border-radius: 10%;
     width: 500px;
     height: 400px;
 }
