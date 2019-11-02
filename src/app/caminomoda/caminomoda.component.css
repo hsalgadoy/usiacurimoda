@@ -1,0 +1,252 @@
+.demoparagraph {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 29px;
+    -moz-column-gap: 29px;
+    column-gap: 29px;
+    -webkit-column-rule: 1px solid rgba(28, 110, 164, 0.5);
+    -moz-column-rule: 1px solid rgba(28, 110, 164, 0.5);
+    column-rule: 1px solid rgba(28, 110, 164, 0.5);
+    max-width: 80%;
+    position: relative;
+    top: 40px;
+    margin: 50px;
+    padding: 30px;
+    left: 3%;
+    align-content: center;
+}
+
+.nontop {
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+.demoparagraph p {
+    margin-top: 5px;
+}
+
+#introduccion {
+    height: 400px;
+    margin-bottom: -3px;
+}
+
+p strong.title {
+    position: relative;
+    top: 70px;
+    left: 12%;
+    font-size: 1.5rem;
+    letter-spacing: .60rem;
+    text-shadow: 1px 8px 1px rgba(188, 153, 93, 0.349);
+    letter-spacing: 1px;
+    justify-content: center;
+    text-align: center;
+    color: rgb(129, 63, 12);
+    font-family: 'Domine', sans-serif;
+}
+
+img {
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+#photocast {
+    border: 4px solid #694d1c;
+    height: 150px;
+    width: 150px;
+    border: 4px solid #7c5a20;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 70px;
+    margin-top: -90px;
+}
+
+.podcast {
+    margin: 95px 8px 8px 8px;
+    width: 300px;
+    height: 150 px;
+    background: #7c5a20;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#audiocast {
+    margin-left: 0px 0px -3px 0px;
+}
+
+audio {
+    margin: 0px 0px -5px 0px;
+    color: red;
+    height: 35px;
+}
+
+#nombrecast {
+    max-width: 30px;
+    min-width: 300px;
+    position: relative;
+}
+
+.podcont {
+    float: left;
+}
+
+.podcast_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.chain {
+    padding: 133px 20px 50px 20px;
+    position: relative;
+    top: 33%;
+    left: 40%;
+}
+
+#titlecadena {
+    position: relative;
+    top: 60px;
+    left: 180px;
+    z-index: 1;
+}
+
+h1 {
+    position: relative;
+    top: 7%;
+    left: 42%;
+}
+
+.circle-lf {
+    position: relative;
+    top: 10%;
+    right: 15px;
+    height: 90px;
+    width: 90px;
+    border: solid 10px rgb(255, 237, 206);
+    border-radius: 100%;
+}
+
+.circle-rg {
+    position: relative;
+    top: 10%;
+    left: 30px;
+    height: 90px;
+    width: 90px;
+    border: solid 10px rgb(255, 237, 206);
+    border-radius: 100%;
+}
+
+.circle-line {
+    margin-top: -16px;
+    height: 140px;
+    width: 130px;
+    border: solid rgb(255, 237, 206);
+}
+
+.rg {
+    border-radius: 100% 0 0 100%;
+    border-width: 15px 0px 15px 15px;
+}
+
+.lf {
+    margin-left: 64px;
+    border-radius: 0 50% 50% 0;
+    border-width: 15px 15px 15px 0px;
+}
+
+.play-button {
+    top: 37%;
+    left: 130%;
+}
+
+.play-button-rg:after {
+    position: absolute;
+    top: 37%;
+    left: 130%;
+    display: block;
+    content: '';
+    box-sizing: border-box;
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+    border-width: 13px 0 13px 20px;
+}
+
+.play-button-lf:before {
+    position: absolute;
+    top: 37%;
+    right: 130%;
+    display: block;
+    content: '';
+    box-sizing: border-box;
+    border-color: transparent #fff transparent transparent;
+    border-style: solid;
+    border-width: 13px 20px 13px 0px;
+}
+
+.imgcont {
+    max-height: 120px;
+    max-width: 120px;
+}
+
+.article-rg {
+    position: absolute;
+    top: -32px;
+    left: 200px;
+    text-align: left;
+}
+
+.leyeng-rg {
+    position: absolute;
+    top: 35%;
+    left: 140px;
+    text-align: left;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.article-lf {
+    position: absolute;
+    top: -32px;
+    left: -200px;
+    text-align: left;
+}
+
+.leyeng-lf {
+    position: absolute;
+    top: 35%;
+    left: -260px;
+    text-align: right;
+    max-width: 250px;
+}
+
+.baner {
+    height: 10%;
+}
+
+#fullpic {
+    border-radius: 0;
+    width: 100%;
+    overflow: hidden;
+    margin: 50px 0 0 50px;
+}
+
+.box {
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    z-index: -100;
+    overflow: hidden;
+    height: 450px;
+}
+
+.box img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    border-radius: 0;
+}

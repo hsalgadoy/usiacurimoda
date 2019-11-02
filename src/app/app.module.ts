@@ -11,6 +11,7 @@ import { AngularFirestore } from 'angularfire2/firestore';
 import { IntroduccionComponent } from './introduccion/introduccion.component';
 import { CadenavalorComponent } from './cadenavalor/cadenavalor.component';
 import { CaminomodaComponent } from './caminomoda/caminomoda.component';
+import { BoomComponent } from './boom/boom.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CaminomodaComponent } from './caminomoda/caminomoda.component';
     MapaComponent,
     IntroduccionComponent,
     CadenavalorComponent,
-    CaminomodaComponent
+    CaminomodaComponent,
+    BoomComponent
   ],
   imports: [
     BrowserModule,
