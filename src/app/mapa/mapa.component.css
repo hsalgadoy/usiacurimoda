@@ -1,7 +1,27 @@
 .content-map {
     padding: 0px 20px 0px 54px;
-    height: 650px;
+    height: 700px;
     width: 1281px;
+}
+
+#titlecontexto {
+    font-size: 1.5rem;
+    letter-spacing: .60rem;
+    text-shadow: 1px 8px 1px rgba(188, 153, 93, 0.349);
+    letter-spacing: 1px;
+    justify-content: center;
+    text-align: center;
+    color: rgb(129, 63, 12);
+    font-family: 'Domine', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+user agent stylesheet strong {
+    font-weight: bold;
 }
 
 .mapacontenedor {
@@ -25,7 +45,7 @@ p {
 .textocontenedor {
     position: relative;
     top: 100px;
-    left: 80px;
+    left: 90px;
     width: 600px;
     font-family: 'Domine', sans-serif;
     text-align: center;

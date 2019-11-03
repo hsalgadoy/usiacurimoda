@@ -17,6 +17,24 @@
     align-content: center;
 }
 
+#contencamino {
+    height: 725px;
+}
+
+#titlecamino {
+    position: relative;
+    top: 100px;
+    left: 9%;
+    font-size: 1.5rem;
+    letter-spacing: .60rem;
+    text-shadow: 1px 8px 1px rgba(188, 153, 93, 0.349);
+    letter-spacing: 1px;
+    justify-content: center;
+    text-align: center;
+    color: rgb(129, 63, 12);
+    font-family: 'Domine', sans-serif;
+}
+
 .nontop {
     margin-top: 5px;
     padding-top: 5px;

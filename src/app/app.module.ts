@@ -12,6 +12,7 @@ import { IntroduccionComponent } from './introduccion/introduccion.component';
 import { CadenavalorComponent } from './cadenavalor/cadenavalor.component';
 import { CaminomodaComponent } from './caminomoda/caminomoda.component';
 import { BoomComponent } from './boom/boom.component';
+import { LlegadacolorComponent } from './llegadacolor/llegadacolor.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BoomComponent } from './boom/boom.component';
     IntroduccionComponent,
     CadenavalorComponent,
     CaminomodaComponent,
-    BoomComponent
+    BoomComponent,
+    LlegadacolorComponent
   ],
   imports: [
     BrowserModule,
