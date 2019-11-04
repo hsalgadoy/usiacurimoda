@@ -13,6 +13,7 @@ import { CadenavalorComponent } from './cadenavalor/cadenavalor.component';
 import { CaminomodaComponent } from './caminomoda/caminomoda.component';
 import { BoomComponent } from './boom/boom.component';
 import { LlegadacolorComponent } from './llegadacolor/llegadacolor.component';
+import { CadenaComponent } from './cadena/cadena.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LlegadacolorComponent } from './llegadacolor/llegadacolor.component';
     CadenavalorComponent,
     CaminomodaComponent,
     BoomComponent,
-    LlegadacolorComponent
+    LlegadacolorComponent,
+    CadenaComponent
   ],
   imports: [
     BrowserModule,

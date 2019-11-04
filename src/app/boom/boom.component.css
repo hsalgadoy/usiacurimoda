@@ -8,11 +8,11 @@ img {
 .gallery {
     width: 700px;
     overflow: hidden;
-    border: 1px solid #aaa;
+    border: 1px solid #986a25;
     margin: 0px auto;
     padding: 20px;
     margin-top: 1%;
-    background-image: radial-gradient(#aaaaaa 0%, #666666 90%, #555555 100%);
+    background-image: radial-gradient(#48310f 0%, #b37d2d 90%, #9b7840 100%);
     text-align: center;
 }
 
@@ -34,7 +34,7 @@ img {
     height: 400px;
     padding: 0;
     margin: 10px 0;
-    border: 1px solid #aaa;
+    border: 1px solid #ae8a55;
     cursor: pointer;
 }
 
@@ -51,11 +51,11 @@ img {
 }
 
 .gallery input+label {
-    background-color: #aaa;
+    background-color: #f8b854;
     height: 6px;
     width: 24px;
     display: inline-block;
-    border: 1px solid #444;
+    border: 1px solid #b7893d;
     cursor: pointer;
     transition: all 0.5s;
 }
@@ -81,7 +81,7 @@ img {
 }
 
 .gallery #ind-4:checked~.gallery-images {
-    left: -1830;
+    left: -1830px;
 }
 
 .gallery #ind-5:checked~.gallery-images {
@@ -89,7 +89,7 @@ img {
 }
 
 .gallery #ind-6:checked~.gallery-images {
-    left: -3005px;
+    left: -3050px;
 }
 
 .gallery #ind-7:checked~.gallery-images {
@@ -97,11 +97,72 @@ img {
 }
 
 .gallery #ind-8:checked~.gallery-images {
-    left: -610px;
+    left: -4270px;
 }
 
 .gallery #ind-9:checked~.gallery-images {
-    left: -1220px;
+    left: -4880px;
+}
+
+.gallery #ind-10:checked~.gallery-images {
+    left: -5490px;
+}
+
+.pidefotog {
+    position: absolute;
+    width: 591px;
+    top: 350px;
+    left: 50px;
+}
+
+#dx1 {
+    left: 40px;
+}
+
+#dx2 {
+    left: 650px;
+}
+
+#dx3 {
+    left: 1260px;
+}
+
+#dx4 {
+    left: 1870px;
+}
+
+#dx5 {
+    left: 2480px;
+}
+
+#dx6 {
+    left: 3090px;
+}
+
+#dx7 {
+    left: 3700px;
+}
+
+#dx8 {
+    left: 4310px;
+}
+
+#dx9 {
+    left: 4920px;
+}
+
+#dx10 {
+    left: 5530px;
+}
+
+.pidefotog>span {
+    background: #ffc059ed;
+    color: #724a09;
+    padding: 2px 6px 2px 5px;
+    height: 0px;
+    letter-spacing: 2pt;
+    word-spacing: 1pt;
+    text-indent: 0pt;
 }
 
 #credit {
@@ -154,8 +215,8 @@ blockquote {
     text-align: left;
     z-index: 10;
     font-size: 5rem;
-    color: #BC995D;
-    background-color: rgb(246, 207, 144);
+    color: rgb(246, 207, 144);
+    background-color: #BC995D;
     line-height: 65px;
 }
 
@@ -167,14 +228,14 @@ blockquote {
     text-align: right;
     z-index: 10;
     font-size: 5rem;
-    color: #BC995D;
-    background-color: rgb(246, 207, 144);
+    color: rgb(246, 207, 144);
+    background-color: #BC995D;
     line-height: 150px;
 }
 
 small {
     font-size: 1.7rem;
-    color: #BC995D;
+    color: rgb(246, 207, 144);
     position: relative;
     z-index: 20;
 }

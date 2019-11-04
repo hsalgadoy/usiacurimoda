@@ -96,127 +96,6 @@ audio {
     width: 100%;
 }
 
-.chain {
-    padding: 4% 0% 8% 3%;
-    position: relative;
-    top: 33%;
-    left: 0%;
-}
-
-#titlecadena {
-    width: 100%;
-    left: 0;
-}
-
-h1 {
-    position: relative;
-    top: 7%;
-    left: 42%;
-}
-
-.circle-lf {
-    position: relative;
-    top: 10%;
-    right: 15px;
-    height: 90px;
-    width: 90px;
-    border: solid 10px rgb(255, 237, 206);
-    border-radius: 100%;
-}
-
-.circle-rg {
-    position: relative;
-    top: 10%;
-    left: 30px;
-    height: 90px;
-    width: 90px;
-    border: solid 10px rgb(255, 237, 206);
-    border-radius: 100%;
-}
-
-.circle-line {
-    margin-top: -16px;
-    height: 140px;
-    width: 130px;
-    border: solid rgb(255, 237, 206);
-}
-
-.rg {
-    border-radius: 100% 0 0 100%;
-    border-width: 15px 0px 15px 15px;
-}
-
-.lf {
-    margin-left: 64px;
-    border-radius: 0 50% 50% 0;
-    border-width: 15px 15px 15px 0px;
-}
-
-.play-button {
-    top: 37%;
-    left: 130%;
-}
-
-.play-button-rg:after {
-    position: absolute;
-    top: 37%;
-    left: 130%;
-    display: block;
-    content: '';
-    box-sizing: border-box;
-    border-color: transparent transparent transparent #fff;
-    border-style: solid;
-    border-width: 13px 0 13px 20px;
-}
-
-.play-button-lf:before {
-    position: absolute;
-    top: 37%;
-    right: 130%;
-    display: block;
-    content: '';
-    box-sizing: border-box;
-    border-color: transparent #fff transparent transparent;
-    border-style: solid;
-    border-width: 13px 20px 13px 0px;
-}
-
-.imgcont {
-    max-height: 120px;
-    max-width: 120px;
-}
-
-.article-rg {
-    position: absolute;
-    top: -32px;
-    left: 200px;
-    text-align: left;
-}
-
-.leyeng-rg {
-    position: absolute;
-    top: 35%;
-    left: 140px;
-    text-align: left;
-    min-width: 250px;
-    max-width: 250px;
-}
-
-.article-lf {
-    position: absolute;
-    top: -32px;
-    left: -200px;
-    text-align: left;
-}
-
-.leyeng-lf {
-    position: absolute;
-    top: 35%;
-    left: -260px;
-    text-align: right;
-    max-width: 250px;
-}
-
 .baner {
     height: 10%;
 }
@@ -245,3 +124,6 @@ h1 {
     transform: translate(-50%, -50%);
     border-radius: 0;
 }
+
+
+/*************************************todo los modales  *******************************/
