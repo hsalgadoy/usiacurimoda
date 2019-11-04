@@ -1,38 +1,10 @@
-.demoparagraph {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 29px;
-    -moz-column-gap: 29px;
-    column-gap: 29px;
-    -webkit-column-rule: 1px solid rgba(28, 110, 164, 0.5);
-    -moz-column-rule: 1px solid rgba(28, 110, 164, 0.5);
-    column-rule: 1px solid rgba(28, 110, 164, 0.5);
-    max-width: 80%;
-    position: relative;
-    top: 40px;
-    margin: 50px;
-    padding: 30px;
-    left: 3%;
-    align-content: center;
-}
-
-.nontop {
-    margin-top: 5px;
-    padding-top: 5px;
-}
-
-.demoparagraph p {
-    margin-top: 5px;
-}
-
 #introduccion {
-    height: 400px;
+    height: auto;
     margin-bottom: -3px;
 }
 
 #modal-content {
-    background: white;
+    background: rgb(255, 218, 170);
     padding: 40px 15px 20px 15px;
 }
 
@@ -199,8 +171,8 @@ h1 {
 
 .article-rg {
     position: absolute;
-    top: -32px;
-    left: 200px;
+    top: -60px;
+    left: 170%;
     text-align: left;
 }
 
@@ -215,8 +187,8 @@ h1 {
 
 .article-lf {
     position: absolute;
-    top: -32px;
-    left: -200px;
+    top: -53px;
+    left: -220px;
     text-align: left;
 }
 
@@ -275,9 +247,11 @@ h1 {
 /**********************************************************/
 
 .botones {
-    position: relative;
-    margin-left: 61.5%;
-    margin-top: 2%;
+    width: 100%;
+}
+
+#vervideo {
+    margin: 0% 44% 0 44%;
 }
 
 .botones a {
@@ -317,7 +291,7 @@ h1 {
 /* Content */
 
 .modal>div {
-    width: 900px;
+    width: 90%;
     background: rgba(250, 184, 41, 0.274);
     position: relative;
     margin: 10% auto;
@@ -436,7 +410,7 @@ h1 {
 
 .modal a[href="#close"] {
     position: relative;
-    right: 450px;
+    right: 0;
     top: 30px;
     color: transparent;
 }
@@ -454,13 +428,12 @@ h1 {
 .modal a[href="#close"]:after {
     content: 'X';
     display: block;
-    /* Position */
     position: absolute;
-    right: -10px;
-    top: -10px;
-    width: 1.5em;
+    right: 48%;
+    top: 20%;
+    margin: 0 1% 0 1%;
+    width: 4%;
     padding: 1px 1px 1px 2px;
-    /* Style */
     text-decoration: none;
     text-shadow: none;
     text-align: center;
@@ -649,12 +622,11 @@ li:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 40px 20px 40px;
 }
 
 img.color {
     border-radius: 0px;
-    width: 350px;
+    width: 48%;
     margin: 5px;
 }
 
@@ -679,6 +651,6 @@ img.color {
 
 .scroller {
     position: relative;
-    width: 90%;
-    left: 5%;
+    width: 80%;
+    margin: 3% 10% 3% 10%;
 }

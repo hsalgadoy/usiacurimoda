@@ -1,44 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import url("//fonts.googleapis.com/css?family=Domine&display=swap");
 html,
 body {
-    padding: 0;
-    margin: 0 -10px 0 0;
-    height: 100%;
-    display: flex;
-    font-family: "Cinzel", sans-serif;
-    font-size: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    font-family: 'Domine', sans-serif;
-}
-
-app-root {
-    margin: 0 0px 0 0;
-    padding: 0 0px 0 0;
-}
-
-* {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto !important;
+    overflow-x: hidden;
+    min-width: 1100px;
 }
 
-::-webkit-scrollbar-track-piece:start {
-    background: transparent url('../src/assets/images/nonecolor.jpg') repeat-y !important;
+#demoparagraph {
+    justify-content: center;
+    -moz-column-count: 1;
+    column-count: 1;
+    -moz-column-gap: 29px;
+    column-gap: 60px;
+    -moz-column-rule: 1px solid rgba(28, 110, 164, 0.5);
+    column-rule: 1px solid rgba(28, 110, 164, 0.5);
+    top: 40px;
+    margin: 1.5% 20% 0 20%;
+    padding: 1% 1% 1% 1%;
+    width: 60%;
+    left: 0;
+    text-align: left;
+    align-content: center;
 }
 
-::-webkit-scrollbar-track-piece:end {
-    background: transparent url('../src/assets/images/nonecolor.jpg') repeat-y !important;
+#demoparagraph p {
+    margin-top: 5px;
 }
 
-::-webkit-scrollbar {
-    width: 8px;
-    /* Tamaño del scroll en vertical */
-    height: 8px;
-    /* Tamaño del scroll en horizontal */
-    display: none;
-    /* Ocultar scroll */
+.demoparagraph p {
+    margin-top: 5px;
+}
+
+.sub-title {
+    margin: auto;
+    padding: 5% 1px 0 20%;
+    text-shadow: 1px 8px 1px rgba(129, 102, 54, 0.349);
+    font-family: 'Domine', sans-serif;
+    letter-spacing: 1px;
+    justify-content: center;
+    text-align: left;
+    color: rgb(129, 63, 12);
+    font-size: 1.30rem;
+    letter-spacing: .20rem;
 }

@@ -1,28 +1,5 @@
-#demoparagraph {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 29px;
-    -moz-column-gap: 29px;
-    column-gap: 29px;
-    -webkit-column-rule: 1px solid rgba(28, 110, 164, 0.5);
-    -moz-column-rule: 1px solid rgba(28, 110, 164, 0.5);
-    column-rule: 1px solid rgba(28, 110, 164, 0.5);
-    max-width: 80%;
-    position: relative;
-    top: 40px;
-    margin: 5px;
-    padding: 35px;
-    left: 8%;
-    align-content: center;
-}
-
-#demoparagraph p {
-    margin-top: 5px;
-}
-
 #introduccion {
-    height: 400px;
+    height: auto;
     margin-bottom: -3px;
 }
 
