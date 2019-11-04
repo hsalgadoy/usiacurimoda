@@ -17,7 +17,7 @@ img {
 }
 
 .gallery-images {
-    width: 2400px;
+    width: 6600px;
     text-align: left;
     position: relative;
     padding: 0;
@@ -77,6 +77,30 @@ img {
 }
 
 .gallery #ind-3:checked~.gallery-images {
+    left: -1220px;
+}
+
+.gallery #ind-4:checked~.gallery-images {
+    left: -1830;
+}
+
+.gallery #ind-5:checked~.gallery-images {
+    left: -2440px;
+}
+
+.gallery #ind-6:checked~.gallery-images {
+    left: -3005px;
+}
+
+.gallery #ind-7:checked~.gallery-images {
+    left: -3660px;
+}
+
+.gallery #ind-8:checked~.gallery-images {
+    left: -610px;
+}
+
+.gallery #ind-9:checked~.gallery-images {
     left: -1220px;
 }
 

@@ -56,10 +56,17 @@ img {
     margin: 95px 8px 8px 8px;
     width: 300px;
     height: 150 px;
-    background: #7c5a20;
     border: 3px solid transparent;
     border-radius: 20px;
     text-align: center;
+}
+
+.clr1 {
+    background: #af7c24;
+}
+
+.clr2 {
+    background: #daaa58;
 }
 
 #audiocast {
@@ -90,17 +97,15 @@ audio {
 }
 
 .chain {
-    padding: 133px 20px 50px 20px;
+    padding: 4% 0% 8% 3%;
     position: relative;
     top: 33%;
-    left: 40%;
+    left: 0%;
 }
 
 #titlecadena {
-    position: relative;
-    top: 60px;
-    left: 180px;
-    z-index: 1;
+    width: 100%;
+    left: 0;
 }
 
 h1 {

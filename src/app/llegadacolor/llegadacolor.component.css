@@ -49,6 +49,23 @@ img {
     text-align: center;
 }
 
+.cadenasub {
+    text-align: center;
+    width: 40%;
+    margin: 0 35% 0 35%;
+    font-size: 2.3rem;
+    letter-spacing: 0.5rem;
+    padding: 5% 0px 0 0%;
+}
+
+.clr1 {
+    background: #af7c24;
+}
+
+.clr2 {
+    background: #daaa58;
+}
+
 #audiocast {
     margin-left: 0px 0px -3px 0px;
 }
@@ -76,18 +93,20 @@ audio {
     width: 100%;
 }
 
+.imgcont {
+    border-radius: 0;
+}
+
 .chain {
-    padding: 133px 15px 110px 15px;
+    padding: 4% 0% 8% 3%;
     position: relative;
     top: 33%;
     left: 0%;
 }
 
 #titlecadena {
-    position: relative;
-    top: 60px;
-    left: 180px;
-    z-index: 1;
+    width: 100%;
+    left: 0;
 }
 
 h1 {
