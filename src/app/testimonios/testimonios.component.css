@@ -1,0 +1,51 @@
+video {
+    width: 100%;
+}
+
+.testim {
+    width: 90%;
+    padding: 3%;
+    background: rgb(231, 193, 121);
+    margin: 4%;
+    border-radius: 5%;
+    text-align: center;
+    font-family: Domain;
+}
+
+#testim {
+    width: 80%;
+    margin: 0 9% 0 9%;
+}
+
+table {
+    width: 80%;
+    margin: 0 10% 0 10%;
+    padding: 4% 0 5% 0;
+}
+
+.quote_container_first {
+    float: left;
+    width: 95%;
+    margin-bottom: 80px;
+}
+
+.quote_text {
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    padding: 0px 50px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.quote_a,
+.quote_b {
+    background-image: url("http://www.designar.cl/wp-content/uploads/2018/11/quote.svg");
+    background-repeat: no-repeat;
+    background-position: center left;
+    height: 30px;
+}
+
+.quote_b {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
